@@ -1,2 +1,2 @@
 # Finding-straight-lane-lines
-Finding  lane lines in a straight street using python's computer vision library OpenCV and numpy.
+Finding  lane lines on a straight road using python's computer vision library OpenCV and numpy.
