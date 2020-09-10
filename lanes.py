@@ -33,6 +33,7 @@ def make_coordinates(image,line_parameters):
     x2 = int((y2-intercept)/slope)
     return np.array([x1,y1,x2,y2])
 
+#save previous lines in variables below in case no lines are detected , those variables are used in average_slope_intercept function
 previous_left = [-1,-1]
 previous_right = [-1,-1]
 
@@ -67,6 +68,9 @@ def average_slope_intercept(image,lines) :
             previous_right = right_fit_average
  
         return np.array([left_line,right_line])
+
+
+# THE CODE BELOW IS USED TO DETECT LANES IN A SINGLE IMAGE 
 
 # image = cv2.imread('test_image.jpg')
 # lane_image = np.copy(image)
