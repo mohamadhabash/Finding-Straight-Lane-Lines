@@ -70,19 +70,6 @@ def average_slope_intercept(image,lines) :
         return np.array([left_line,right_line])
 
 
-# THE CODE BELOW IS USED TO DETECT LANES IN A SINGLE IMAGE 
-
-# image = cv2.imread('test_image.jpg')
-# lane_image = np.copy(image)
-# canny_image = canny(lane_image)
-# cropped_image= region_of_interest(canny_image)
-# lines = cv2.HoughLinesP(cropped_image,2,np.pi/180,100,np.array([]),minLineLength=40,maxLineGap=5)
-# averaged_lines = average_slope_intercept(lane_image,lines)
-# line_image = display_lines(lane_image,averaged_lines)
-# combo_image = cv2.addWeighted(lane_image,0.8,line_image,1,1)
-# cv2.imshow('result',combo_image)
-# cv2.waitKey(0)
-
 cap = cv2.VideoCapture("test2.mp4")
 while(cap.isOpened()):
     _ , frame = cap.read()
