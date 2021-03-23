@@ -7,4 +7,4 @@ Finding  lane lines on a straight road using python's computer vision library Op
 
 
 # Original image :
-![alt text](test_image.jpg)
+![alttext](test_image.jpg)
